@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="main">    
+        <h2> AIが画像を識別します</h2>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data" action="{{ url_for('geek') }}">
+            <div class="image_choose"><input class="file_choose" type="file" name="file"></div>
+            <div><input class="btn" value="画像を識別する" type="submit"></div>
+        </form>
+    </div>
+    
+{% endblock %}
+
+
